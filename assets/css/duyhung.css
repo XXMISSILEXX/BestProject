@@ -11,7 +11,7 @@
 /*================  SIGN IN & SIGN UP CSS   ======================= */
 
 .container {
-    background-image: url('/Pseudo-Design/bicrypto-bg.png');
+    background-image: url('../img/bicrypto-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
