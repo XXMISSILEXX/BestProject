@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/*================  SIGN IN & SIGN UP CSS   ======================= */
+
 .container {
     background-image: url('/Pseudo-Design/bicrypto-bg.png');
     background-size: cover;
@@ -90,8 +93,9 @@ form {
     color: rgb(19, 37, 206);
 }
 
-
-
 .signup h3 {
     font-size: 25px;
 }
+
+/* ============================SHOP CSS============================ */
+
