@@ -11,9 +11,10 @@
 /*================  SIGN IN & SIGN UP CSS   ======================= */
 
 .container {
-    background-image: url('../img/bicrypto-bg.png');
+    /* background-image: url('../img/bicrypto-bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #121212d8;
     height: 100vh;
     display: flex;
     justify-content: center;
