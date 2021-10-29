@@ -1,6 +1,6 @@
-					/*Navigation*/
+/*Navigation*/
 .navigation{
-	padding:  16px 0;    /*1.6 x 10 = 16px*/
+	padding:  1.6rem 0;    /*1.6 x 10 = 16px*/
 
 }
 
@@ -37,18 +37,18 @@
 }
 
 .nav-item:not(:last-child){
-	margin-right: 5px;  				/*0.5x10=5px*/
+	margin-right: 0.5rem;  				/*0.5x10=5px*/
 
 }
 .nav-item{
-	padding: 1px;
+	padding: 0 1rem;
 }
 
 .nav-link{
 	position: relative;
 	display: inline-block;
-	padding: 5px 0 2px;
-	font-size: 15px;
+	padding: 0.5rem 0 0.2rem;
+	font-size: 1.5rem;
 	color: var(--black);
 	text-transform: uppercase;
 	transition: all 500ms ease-in-out;
@@ -73,13 +73,13 @@
 
 
 .nav-icons span:not(:last-child){
-	margin-right: 5px;
+	margin-right: 0.5rem;
 }
 .nav-icons span{
-	font-size: 16px;
+	font-size: 1.6rem;
 	border-radius: 50%;
 	border: 1px solid var(--grey);
-	padding: 3px 7px;
+	padding: 0.3rem 0.7rem;
 	cursor: pointer;
 	transition: all 300ms ease-in-out;
 }
@@ -125,18 +125,18 @@
 
 @media only screen and (max-width: 996px){
 	.nav-item:not(:last-child){
-		margin-right: 3px;
+		margin-right: 0.3rem;
 	}
 	.nav-item{
-		padding: 0 5px;
+		padding: 0 0.5rem;
 	}
 
 	.nav-link{	
-	font-size: 14px;
+	font-size: 1.4rem;
 	}
 	.nav-icons span{
-		font-size: 12px;
-		padding: 3px 7px;
+		font-size: 1.2rem;
+		padding: 0.3rem 0.7rem;
 	}
 
 }
@@ -165,7 +165,7 @@
 	.nav-list{
 		flex-direction: column;
 		align-items: start;
-		padding: 20px 0;
+		padding: 2rem 0;
 	}
 
 	.nav-top{													/*Push the logo*/
@@ -173,11 +173,11 @@
 		 justify-content: space-between;
 		 align-items: center;
 		 background-color: var(--yellow);
-		 padding: 16px 20px;
+		 padding: 1.6rem 2rem;
 	}
 
 	.nav-top .logo h1{
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: 500;
 	}
 
@@ -186,29 +186,29 @@
 	}
 	.hamburger{
 		display: block;
-		font-size: 25px;
+		font-size: 2.5rem;
 		cursor: pointer;
 	}
 
 	.close{
-		font-size: 20px;
+		font-size: 2rem;
 		color: var(--white);
 		cursor: pointer;
 	}
 
 	.nav-item:not(:last-child){
-		margin-bottom: 10px;
+		margin-bottom: 1rem;
 	}
 
 	.nav-link{
-		font-size: 18px;
+		font-size: 1.8rem;
 		width: 100%;
-		padding: 10px 20px;
+		padding: 1rem 2rem;
 	}
 	.nav-icons span{
 		display: none;
 		border: none;
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	.nav-icons span:last-child{
 		display: block;
@@ -230,26 +230,10 @@
 
 
 
-
-
-
-
-
-
-																	/*Footer*/
-										/*Footer*/
+/*Footer*/
 
 .footer{
 	background-color: var(--black);
-<<<<<<< HEAD
-	padding: 60px 10px 10px 10px;
-	line-height: 30px;
-	margin-top: 50px;
-}									
-
-.footer-center span{
-	 margin-right: 10px;
-=======
 	padding: 6rem 1rem 1rem 1rem;
 	line-height: 3rem;
 	margin-top: 5rem;
@@ -257,7 +241,6 @@
 
 .footer-center span{
 	 margin-right: 1rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 }	
 
 
@@ -271,11 +254,7 @@
 .footer-center a:link, .footer-center a:visited{
 	display: block;
 	color: grey;
-<<<<<<< HEAD
-	font-size: 14px;
-=======
 	font-size: 1.4rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 	transition: 600ms;
 }
 
@@ -284,56 +263,33 @@
 }
 
 .footer-center div{
-<<<<<<< HEAD
-	font-size: 14px;
-}
-
-.footer-center h3{
-	font-size: 18px;
-	margin-bottom: 10px;
-=======
 	font-size: 1.4rem;
 }
 
 .footer-center h3{
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 	font-weight: 600;
 }
 
 .footer .social-media {
-<<<<<<< HEAD
-	margin-top: 20px;
-	text-align: right;
-	margin-right: -30px;
-=======
 	margin-top: 2rem;
 	text-align: right;
 	margin-right: -3rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 }
 .footer .icon h3{
 	display: inline;
 	color: var(--white);
 }
 .footer .icon a{
-<<<<<<< HEAD
-	margin-left: 30px;
-=======
 	margin-left: 3rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 }
 .footer .icon{
 
 
 }
 .footer .icon i{
-<<<<<<< HEAD
-	font-size: 30px;
-=======
 	font-size: 3rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 	color: var(--white);
 	transition: all 300ms ease-in-out;
 }
@@ -346,11 +302,7 @@
 @media only screen and (max-width: 768px){
 	.footer-container{
 		grid-template-columns: repeat(2,1fr);
-<<<<<<< HEAD
-		row-gap: 20px;																	/*set gap between rows in flexbox*/
-=======
 		row-gap: 2rem;																	/*set gap between rows in flexbox*/
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 	}
 }
 
@@ -359,10 +311,6 @@
 		grid-template-columns: repeat(1,1fr);
 	}
 	.footer .icon a{
-<<<<<<< HEAD
-		margin-left: 10px;
-=======
 		margin-left: 1rem;
->>>>>>> 11343fef134b3860fc741317cb67ce8d1aa78050
 	}
 }
