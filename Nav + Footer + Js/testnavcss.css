@@ -1,3 +1,61 @@
+:root{
+  --white: #fff;
+  --black: #222;
+  --pink: #f60091;
+  --grey: #444;
+  --grey2: #959595;
+  --grey-alt: #d1e2e9;
+  --yellow: #ffd800;
+  --green: #59b210;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;			//default is 16px -->  62.5% x 16 = 10 -->1rem =10  / 2rem =20
+}
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;   // 1.6 x 10 =16
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+  z-index: -1;   // behind
+}
+li,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  max-width: 114rem;                                  /*114x10 =  1140px*/
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 3rem;
+  }																/*define width for container - media queries*/
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+
 /*Navigation*/
 .container {
   max-width: 1140px;                                  /*114x10 =  1140px*/
