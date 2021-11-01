@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*================  SIGN IN & SIGN UP CSS   ======================= */
+
+.container {
+    background-color: #121212d8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: 100px;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 400px;
+    background: #121212d8;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container h3 {
+    font-size: 33px;
+    font-weight: bold;
+    color: #21b6cf;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0 10px 0;
+}
+
+.form-container .form input {
+    height: 40px;
+    background: none;
+    color: #f8f9fa;
+    border: 2px solid #21b6cf;
+    border-radius: 15px;
+    width: 100%;
+    margin: 8px 0;
+    padding: 0 10px;
+    outline: none;
+}
+
+.form-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-container form button {
+    background: none;
+    padding: 8px 16px;
+    border-color: #21b6cf;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    margin: 15px 0;
+}
+.form-container p {
+    color: white;
+    text-align: center;
+}
+
+.form-container a:hover {
+    color: rgb(19, 37, 206);
+}
+
+.signup h3 {
+    font-size: 25px;
+}
+
+/* ============================SHOP CSS============================ */
+
+section {
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+}
+
+section ul {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+section ul li {
+    list-style: none;
+    background-color: #eee;
+    padding: 8px 20px;
+    margin: 5px 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active {
+    background-color: rgb(0, 119, 255);
+    color: #fff;
+}
+
+.product {
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px ,1fr));
+    grid-gap: 20px;
+}
+
+.product .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.product .card .imgBox img {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.product .card:hover .imgBox img {
+    transform: scale(1.25);
+}
+
+.product .card:hover {
+    box-shadow: 0px 0 8px 6px #ccc;
+}
+
+.product .card .content {
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+}
+
+.product .card .content .pdName {
+    padding: 0 12px;
+    letter-spacing: 1px;
+}
+
+.product .card .content .price_rating h2 {
+    color: red;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product .card .content .price_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 16px;
+}
+
+.product .card .content .price_rating i {
+    color: #ffd513;
+}
+
+.product .card .content .price_rating .gray {
+    color: #ccc;
+}
+
+.product .card .content .rating {
+    margin-left: 6px;
+}
+
+
+
