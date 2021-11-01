@@ -1,4 +1,19 @@
 /*Navigation*/
+.container {
+  max-width: 1140px;                                  /*114x10 =  1140px*/
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }																/*define width for container - media queries*/
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
 .navigation{
 	padding:  16px 0;    /*1.6 x 10 = 16px*/
 
