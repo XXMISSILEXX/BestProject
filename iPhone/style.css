@@ -27,8 +27,46 @@ ul li {
 }
 /*Home*/
 					/*Navigation*/
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;			//default is 16px -->  62.5% x 16 = 10 -->1rem =10  / 2rem =20
+}
+.container {
+  max-width: 1140px;                                  /*114x10 =  1140px*/
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 3px;
+  }																/*define width for container - media queries*/
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+/*Navigation*/
+.container {
+  max-width: 1140px;                                  /*114x10 =  1140px*/
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }																/*define width for container - media queries*/
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
 .navigation{
 	padding:  16px 0;    /*1.6 x 10 = 16px*/
+
 }
 
 .nav-center{
@@ -59,7 +97,7 @@ ul li {
   left: 0;
   width: 100%;
   z-index: 1200;
-  background-color: var(--white);
+  background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,7 +106,7 @@ ul li {
 
 }
 .nav-item{
-	padding: 17px 10px 0;
+	padding: 0 10px;
 }
 
 .nav-link{
@@ -76,7 +114,7 @@ ul li {
 	display: inline-block;
 	padding: 5px 0 2px;
 	font-size: 15px;
-	color: var(--black);
+	color: #222;
 	text-transform: uppercase;
 	transition: all 500ms ease-in-out;
 }
@@ -88,7 +126,7 @@ ul li {
 	height: 2px;
 	top: 100%;
 	left: 0;
-	background-color: var(--pink);
+	background-color: #f60091;
 	transition: transform 500ms;
 	transform: scaleX(0);					/*scalex decrease or increase width*/
 	transform-origin: top;	
@@ -105,7 +143,7 @@ ul li {
 .nav-icons span{
 	font-size: 16px;
 	border-radius: 50%;
-	border: 1px solid var(--grey);
+	border: 1px solid #444;
 	padding: 3px 7px;
 	cursor: pointer;
 	transition: all 300ms ease-in-out;
@@ -114,7 +152,7 @@ ul li {
 	color: black;									/*set the icon to black*/
 }
 .nav-icons span:hover{
-	background-color: var(--pink);
+	background-color: #f60091;
 }
 
 
@@ -140,7 +178,7 @@ ul li {
 	transition: all 300ms ease-in-out;
 }
 .nav-icons span:hover .fas{
-	color: var(--white);
+	color: #fff;
 }
 
 .hamburger{
@@ -180,7 +218,7 @@ ul li {
 		width: 80%;
 		height: 100vh;
 		z-index: 9990;
-		background-color: var(--white);
+		background-color: #fff;
 		transition: all 500ms linear;
 	}
 
@@ -199,7 +237,7 @@ ul li {
 		display: flex;
 		 justify-content: space-between;
 		 align-items: center;
-		 background-color: var(--yellow);
+		 background-color: #ffd800;
 		 padding: 16px 20px;
 	}
 
@@ -219,7 +257,7 @@ ul li {
 
 	.close{
 		font-size: 20px;
-		color: var(--white);
+		color: #fff;
 		cursor: pointer;
 	}
 
@@ -294,6 +332,29 @@ hr {
 	width: 110px;
 	height: 40px;
 	margin: 0 5px;
+	font-size: 16px;
+}
+.product-color input[value="Pink"] {
+	background-color: white;
+	color: black;
+	border: 1px solid silver;
+}
+.product-color input[value="Pink"]:hover {
+	background-color: pink;
+}
+.product-color input[value="Pink"]:focus {
+	background-color: pink;
+}
+.product-color input[value="Starlight"] {
+	background-color: white;
+	color: black;
+	border: 1px solid silver;
+}
+.product-color input[value="Starlight"]:hover {
+	background-color: #d7dfe1;
+}
+.product-color input[value="Starlight"]:focus {
+	background-color: #d7dfe1;
 }
 .product-color input[value="Coral"] {
 	background-color: white;
@@ -494,12 +555,13 @@ a button {
 	font-size: 17px;
 }
 .all-detail {
-	display: flex;
-	margin-left: 170px;
 	border: 1px solid #D1C8D7;
 	border-radius: 20px;
 	display: inline-block;
-	width: 80%;
+	width: 100%;
+}
+.detail {
+	margin: 0 auto;
 }
 .detail h1,p {
 	margin: 2px 1%;
@@ -536,7 +598,7 @@ a button {
 .footer-container{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
-	color: var(--white);
+	color: #fff;
 
 }
 
@@ -568,14 +630,14 @@ a button {
 }
 .footer .icon h3{
 	display: inline;
-	color: var(--white);
+	color: #fff;
 }
 .footer .icon a{
 	margin-left: 30px;
 }
 .footer .icon i{
 	font-size: 30px;
-	color: var(--white);
+	color: #fff;
 	transition: all 300ms ease-in-out;
 }
 
