@@ -1,4 +1,4 @@
-@charset "utf-8"
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins: wght@400;500;600;700;800;900&display=swap');
 
 *{
@@ -21,9 +21,24 @@ ul {
 ul li {
 	list-style: none;
 }
-.super_container {
+
+/*.super_container {
 	width: 100%;
 	overflow: hidden;
+}*/
+.container {
+  max-width: 1140px;                                  /*114x10 =  1140px*/
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }																/*define width for container - media queries*/
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
 }
 /*Home*/
 					/*Navigation*/
@@ -143,7 +158,11 @@ html {
 .nav-icons span{
 	font-size: 16px;
 	border-radius: 50%;
+<<<<<<< HEAD
 	border: 1px solid #444;
+=======
+	border: 1px solid grey;
+>>>>>>> b1c6ae3d5000717b4779527e32ce26fde9ae3521
 	padding: 3px 7px;
 	cursor: pointer;
 	transition: all 300ms ease-in-out;
