@@ -27,3 +27,36 @@ closeBtn.addEventListener("click", () => {
 //     navBar.classList.remove("fix-nav");
 //   }
 // });
+
+function check () {
+      var name =document.forms.name.value;
+      var email=document.forms.email.value;
+      var phone=document.forms.phone.value;
+      var sub=document.forms.subject.value;
+      var mess=document.forms.message.value;
+      if (name===null || name==='') {
+        alert("Username can't be blank");
+        document.forms.name.focus();
+        return false;
+      }
+      if (email===null || email==='') {
+        alert("Email can't be blank");
+        document.forms.email.focus();
+        return false;
+      } 
+      if (phone===null || phone==='') {
+        alert("Phone can't be blank");
+        document.forms.phone.focus();
+        return false;
+      }
+      if (sub===null || sub==='') {
+        alert("Subject can't be blank"); 
+        document.forms.subject.focus();
+        return false;
+      }
+      if (mess===null || mess==='') {
+        alert("Message can't be blank");
+        document.forms.message.focus();
+        return false;
+      }
+    }
