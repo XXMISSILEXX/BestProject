@@ -1,30 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/duyhung.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đăng Nhập</title>
+
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style_nav_footer.css">
+	<link rel="stylesheet" href="/assets/css/signin_up.css">
+    <script src="https://kit.fontawesome.com/423f7cbf45.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <img src="../img/logo-ysshop.png" class="logo">
-            
-            <div class="form-container">
-                <h3>SIGN IN</h3>
-                <form action="" class="form">
-                    <form action="" class="form">
-                        <input type="text" placeholder="Email address">
-                        <input type="text" placeholder="Password">
-                        <a href="#">Forgot password?</a>
-                        <button>LOGIN <span class="fa fa-paper-plane"></span></button>
-                </form>
-                <p>Don't have an account yet? <a href="./signUp.html">Create an account here</a></p>
-            </div>
+	<!-- Header -->
+			<header class="header" id="header">
+				<nav class="navigation">
+					<div class="nav-center container">
+						<a href="#home"  class="logo">
+							 <h1>YASUO<span>SHOP</span></h1>
+						</a>
+					
+
+					<div class="nav-menu">
+						<div class="nav-top">
+							<div  class="logo">
+							   <h1>YASUO<span>SHOP</span></h1>
+						    </div>
+
+						    <div class="close">
+						    	<i class="fas fa-times"></i>
+						    </div>
+						</div>
+						<ul class="nav-list">
+							<li class="nav-item">
+								<a href="#home" class="nav-link scroll-link">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#home" class="nav-link scroll-link">Shop</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#home" class="nav-link scroll-link">Promotion</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#home" class="nav-link scroll-link">Blog</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#contact" class="nav-link scroll-link">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="nav-icons">
+						<span><a href="#"><i class="fas fa-user"></i></a></span>
+						<span><a href="#"><i class="fas fa-search"></i></a></span>
+						<span><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+						<!-- <span id="checkout_items" class="checkout_items">2</span> -->
+					</div>
+
+					<div class="hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+				</div>
+				</nav>
+			</header>
+
+
+			<!-- End Header -->
+
+
+            <form action="" onsubmit="return validate()">
+                <div class="register">
+                    <h1>Đăng Nhập</h1>        
+                    <p>Vui lòng điền thông tin để đăng nhập</p>
+                    <hr>
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" placeholder="Tên đăng nhập" name="username" id="username">
+                    <label for="password">Mật Khẩu</label>
+                    <input type="password" placeholder="******" name="password" id="password">
+                    <p>Để tạo tài khoản vui lòng đồng ý với điểu khoản của chúng tôi <a href="#">Term & Private</a></p>
+                    <button type="submit" class="submit">Đăng Nhập</button>
+                </div>
+                <div class="login">
+                    <p>Bạn chưa có tài khoản? <a href="signUp.html">Đăng Ký<a></p>
+                </div>
+            </form>
+
+
+
+			<footer id="footer" class="section footer">
+				<div class="container">
+					<div class="footer-container">
+						<div class="footer-center">
+							<h3>EXTRAS</h3>
+							<a href="#">Brands</a>
+							<a href="#">Gift Certificates</a>
+							<a href="#">Affiliate</a>
+							<a href="#">Specials</a>
+							<a href="#">Site Map</a>
+							
+						</div>
+
+						<div class="footer-center">
+							<h3>INFORMATION</h3>
+							<a href="#">About Us</a>
+							<a href="#">Privacy Policies</a>
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Contact Us</a>
+							<a href="#">Site Map</a>							
+						</div>
+
+						<div class="footer-center">
+		          <h3>MY ACCOUNT</h3>
+		          <a href="#">My Account</a>
+		          <a href="#">Order History</a>
+		          <a href="#">Wish List</a>
+		          <a href="#">Newsletter</a>
+		          <a href="#">Returns</a>
+	        </div>
+
+
+	        <div class="footer-center" id="contact">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            Mid-Laner, Yasuo Street, Top1 Challenger , Summoner's Rift
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            BestChampYasuo@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            325-436-2344
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+            Mid-Lane, Summoner's Rift
+          </div>
         </div>
-    </div>
+      </div>
+      			<div class="icon social-media">
+      				<h3>Follow Us:</h3>
+      				<span><a href="https://www.youtube.com/watch?v=le03Sd-afwI"><span><i class="fab fa-facebook"></i></a></span>
+      				<span><a href="https://www.youtube.com/watch?v=chY9p-XLHHk"><i class="fab fa-youtube"></i></a></span>
+      				<span><a href="https://www.youtube.com/watch?v=1a9gLAFk5lc"><i class="fab fa-twitter"></i></a></span>
+      				<span><a href="https://www.youtube.com/watch?v=p3DPQllQR6k"><i class="fab fa-instagram"></i></a></span>
+      			</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<!-- End Footer -->
+
+			<script src="/assets/js/app.js"></script>
 </body>
 </html>

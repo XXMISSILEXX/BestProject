@@ -18,16 +18,16 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-size: 62.5%;			//default is 16px -->  62.5% x 16 = 10 -->1rem =10  / 2rem =20
+  font-size: 62.5%;		
 }
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;   // 1.6 x 10 =16
+  font-size: 1.6rem;  
   font-weight: 400;
   color: var(--black);
   background-color: var(--white);
-  z-index: -1;   // behind
+  z-index: -1; 
 }
 li,
 ul {

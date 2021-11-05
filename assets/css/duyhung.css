@@ -7,103 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/*================  SIGN IN & SIGN UP CSS   ======================= */
-
-.container {
-    background-color: #121212d8;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.logo {
-    height: 100px;
-}
-
-.wrapper {
-    width: 95%;
-    max-width: 400px;
-    background: #121212d8;
-    padding: 40px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.form-container h3 {
-    font-size: 33px;
-    font-weight: bold;
-    color: #21b6cf;
-    font-family: 'Roboto', sans-serif;
-    margin: 5px 0 10px 0;
-}
-
-.form-container .form input {
-    height: 40px;
-    background: none;
-    color: #f8f9fa;
-    border: 2px solid #21b6cf;
-    border-radius: 15px;
-    width: 100%;
-    margin: 8px 0;
-    padding: 0 10px;
-    outline: none;
-}
-
-.form-container a {
-    color: white;
-    text-decoration: none;
-}
-
-.form-container form button {
-    background: none;
-    padding: 8px 16px;
-    border-color: #21b6cf;
-    font-weight: 600;
-    border-radius: 15px;
-    color: white;
-    margin: 15px 0;
-}
-.form-container p {
-    color: white;
-    text-align: center;
-}
-
-.form-container a:hover {
-    color: rgb(19, 37, 206);
-}
-
-.signup h3 {
-    font-size: 25px;
-}
-
 .chu {
     padding: 10px 139px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
 }
-
-/* ============================SHOP CSS============================ */
 
 section {
     padding: 0 20px;
@@ -120,7 +28,7 @@ section ul {
 
 section ul li {
     list-style: none;
-    background-color: #eee;
+    background-color: #ccc;
     padding: 8px 20px;
     margin: 5px 8px;
     letter-spacing: 1px;
@@ -200,6 +108,3 @@ section ul li.active {
 .product .card .content .rating {
     margin-left: 6px;
 }
-
-
-

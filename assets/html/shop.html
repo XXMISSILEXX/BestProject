@@ -5,37 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="../css/duyhung.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style_nav_footer.css">
+    <link rel="stylesheet" href="/assets/css/duyhung.css">
     <script src="https://kit.fontawesome.com/423f7cbf45.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <a href="#"><span class="black">YASUO</span><span class="red">SHOP</span></a>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">PROMOTION</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="icon">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
+    <header class="header" id="header">
+        <nav class="navigation">
+            <div class="nav-center container">
+                <a href="#home"  class="logo">
+                     <h1>YASUO<span>SHOP</span></h1>
+                </a>
+            <div class="nav-menu">
+                <div class="nav-top">
+                    <div  class="logo">
+                       <h1>YASUO<span>SHOP</span></h1>
+                    </div>
+
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link scroll-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link scroll-link">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link scroll-link">Promotion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link scroll-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link scroll-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-icons">
+                <span><a href="#"><i class="fas fa-user"></i></a></span>
+                <span><a href="#"><i class="fas fa-search"></i></a></span>
+                <span><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+            </div>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
+        </nav>
     </header>
-    
+
     <div class="chu">
         <i class="fas fa-home"></i> 
         Home > Shop
     </div>
 
     <div class="img">
-        <img src="../img/1.jpg" width="100%" height="230px">
+        <img src="../img/1.jpg" width="100%" height="250px">
     </div>
 
     <section>
@@ -438,6 +472,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/app.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
