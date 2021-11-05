@@ -7,15 +7,26 @@ body {
     box-sizing: border-box;
 }
 
+.center {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
 .register {
     width: 500px;
     padding: 16px;
-    margin: 110px auto 0px;
+    margin: 44px auto 0px;
     background-color: #fff;
 }
 
 .register p {
     margin: 10px 0;
+}
+
+.register h1:hover {
+    color: rgb(238, 32, 84);
+    cursor: pointer;
 }
 
 input[type=text],
