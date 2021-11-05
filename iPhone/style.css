@@ -1,6 +1,5 @@
 @charset "utf-8"
-@import url('https://fonts.googleapis.com/css2?family=Poppins: wght@400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -13,9 +12,12 @@ body {
 	background: #ffffff;
 	color: #1e1e27;	
 }
+
+a {
+	text-decoration: none;
 }
 ul {
-	list-style: none;
+	list-style-type: none;
 	margin-bottom: 0px;
 }
 ul li {
@@ -315,24 +317,40 @@ hr {
 	font-size: 35px;
 	font-weight: bold;
 	border-bottom: 1px solid black;
+	padding-bottom: 10px;
 }
 .main-product-info {
 	width: 60%;
 	padding: 10px;
 }
-.main-product-info p,ul  {
+.main-product-info p,ul,li  {
 	font-size: 17px;
+	margin-bottom: 5px;
+	margin-left: -1px;
+}
+.main-product-info p {
+	margin-bottom: 10px;
 }
 .price p {
 	color: red;
 	font-size: 25px;
 	font-weight: bold;
+	margin: 10px 0;
+}
+.product-color p {
+	margin-bottom: 10px;
+	margin-left: 1px;
 }
 .product-color input[type="submit"] {
 	width: 110px;
 	height: 40px;
 	margin: 0 5px;
 	font-size: 16px;
+	transition: all 300ms ease-in-out;
+	border-radius: 12px;
+	cursor: pointer;
+	margin-left: -2px;
+	margin-bottom: 10px;
 }
 .product-color input[value="Pink"] {
 	background-color: white;
@@ -565,6 +583,7 @@ a button:hover {
 	border-radius: 20px;
 	display: inline-block;
 	width: 100%;
+	margin-top: -10px;
 }
 .detail {
 	margin: 0 auto;
@@ -572,6 +591,7 @@ a button:hover {
 .detail h1,p {
 	margin: 2px 1%;
 	color: black;
+	margin-bottom: 7px;
 }
 .detail h1{
 	text-transform: uppercase;
@@ -599,36 +619,28 @@ a button:hover {
 .footer-center span{
 	 margin-right: 10px;
 }	
-
-
 .footer-container{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	color: #fff;
-
 }
-
 .footer-center a:link, .footer-center a:visited{
 	display: block;
 	color: grey;
 	font-size: 14px;
 	transition: 600ms;
 }
-
 .footer-center a:hover{
 	color: red;
 }
-
 .footer-center div{
 	font-size: 14px;
 }
-
 .footer-center h3{
 	font-size: 18px;
 	margin-bottom: 10px;
 	font-weight: 600;
 }
-
 .footer .social-media {
 	margin-top: 20px;
 	text-align: right;
@@ -713,7 +725,6 @@ a button:hover {
 	}
 	hr {
 		width: 100%;
-		color: ;
 	}
 	.main-product-info h1 {
 		font-size: 35px;
@@ -723,10 +734,33 @@ a button:hover {
 	.items {
 		display: none;
 	}
-/*	.footer {
-		width: 10%;
-		margin-left: -100px;
-		padding-right: 50px;
-		font-size: 12px;
-	}*/
+}
+@media only screen and (min-width: 100px) and (max-width: 740px) {
+	.main-product {
+		flex-direction: column;
+		text-align: center;
+	}
+	.all-detail {
+		width: 43%;
+		margin-left: 50px;
+	}
+	.bonus {
+		width: 96%;
+	}
+	.main-product-info {
+		width: 50%;
+		margin-left: -10px;
+	}
+	hr {
+		width: 100%;
+	}
+	.product-color {
+		width: 95%;
+	}
+	.items {
+		display: none;
+	}
+	.swiper {
+		margin-left: -20px;
+	}
 }
