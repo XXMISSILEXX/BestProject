@@ -17,12 +17,12 @@
 section {
     padding: 0 20px;
     width: 1280px;
-    margin: 40px auto;
+    margin: 6px auto;
 }
 
 section ul {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     justify-content: center;
     text-align: center;
 }
