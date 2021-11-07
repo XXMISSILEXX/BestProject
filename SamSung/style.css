@@ -582,8 +582,9 @@ a button:hover {
 	border: 1px solid #D1C8D7;
 	border-radius: 20px;
 	display: inline-block;
-	width: 100%;
+	width: 90%;
 	margin-top: -10px;
+	margin-left: 80px;
 }
 .detail {
 	margin: 0 auto;
@@ -605,7 +606,7 @@ a button:hover {
 .img-all-detail {
 	display: flex;
 	width: 98%;
-	height: 750px;
+	height: 650px;
 	margin: 10px;
 }
 
