@@ -49,6 +49,10 @@ section ul li.active {
     grid-gap: 20px;
 }
 
+.product a {
+    color: #000;
+}
+
 .product .card .imgBox {
     position: relative;
     width: 100%;

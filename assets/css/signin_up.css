@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+form a {
+    color: rgb(12, 124, 12);
+}
+
 .center {
     display: flex !important;
     justify-content: center !important;
