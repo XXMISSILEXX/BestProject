@@ -439,3 +439,6 @@ input[type="submit"]:hover {
   background-color: #051922;
   color: #F28123;
 }
+::placeholder {
+	font-family: 'Poppins',sans-serif;
+}
