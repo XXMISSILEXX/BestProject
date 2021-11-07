@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
   --white: #fff;
   --black: #222;
@@ -14,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -468,7 +470,7 @@ img {
  
    
   h1 {
-	font-weight: 100;
+	font-weight: 800;
   }
    
   label {
@@ -482,7 +484,7 @@ img {
   }
   div.product-title{
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 }
 
    
@@ -509,7 +511,6 @@ img {
   }
   .product .product-details .product-title {
 	margin-right: 20px;
-	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
   }
   .product .product-details .product-description {
 	margin: 5px 20px 5px 0;
@@ -523,7 +524,6 @@ img {
 	padding: 4px 8px;
 	background-color: #c66;
 	color: #fff;
-	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
 	font-size: 12px;
 	border-radius: 3px;
   }
