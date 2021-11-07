@@ -57,7 +57,7 @@
 						<span><a href="#"><i class="fas fa-user"></i></a></span>
 						<span><a href="#"><i class="fas fa-search"></i></a></span>
 						<span><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
-						<!-- <span id="checkout_items" class="checkout_items">2</span> -->
+						<!-- <span id="checkout_items" class="checkout_items">2</span>  -->
 					</div>
 
 					<div class="hamburger">
@@ -73,7 +73,8 @@
       
             <!-- Cart shop -->
 			
-			<h1 class="title">Shopping Cart</h1>
+			<h1 class="title"><i class="fa-solid fa-cart-shopping"></i>Shopping Cart</h1>
+			
 			<hr>
  
 <div class="shopping-cart">
@@ -81,9 +82,10 @@
   <div class="column-labels">
     <label class="product-image">Image</label>
     <label class="product-details">Product</label>
+	<label class="product-color">Color</label>
     <label class="product-price">Price</label>
     <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
+    <label class="product-removal"></label>
     <label class="product-line-price">Total</label>
   </div>
  
@@ -93,8 +95,9 @@
     </div>
     <div class="product-details">
       <div class="product-title">Iphone 13 Pro Max 256G</div>
-      <p class="product-description">6G / 512G Grey </p>
+      <p class="product-description">6G / 512G </p>
     </div>
+	<div class="product-color">Grey</div>
     <div class="product-price">714.43</div>
     <div class="product-quantity">
       <input type="number" value="2" min="1">
@@ -113,8 +116,9 @@
     </div>
     <div class="product-details">
       <div class="product-title">Samsung Galaxy Z Flod3 5G</div>
-      <p class="product-description">12G / 256G Black </p>
+      <p class="product-description">8G / 256G </p>
     </div>
+	<div class="product-color">Black</div>
     <div class="product-price">692.35</div>
     <div class="product-quantity">
       <input type="number" value="1" min="1">
@@ -129,19 +133,19 @@
  
   <div class="totals">
     <div class="totals-item">
-      <label>Subtotal</label>
+      <label class="cost">Subtotal</label>
       <div class="totals-value" id="cart-subtotal">71.97</div>
     </div>
     <div class="totals-item">
-      <label>Tax (5%)</label>
+      <label class="cost">Tax (5%)</label>
       <div class="totals-value" id="cart-tax">14.8</div>
     </div>
     <div class="totals-item">
-      <label>Shipping</label>
+      <label class="cost">Shipping</label>
       <div class="totals-value" id="cart-shipping">35.00</div>
     </div>
     <div class="totals-item totals-item-total">
-      <label>Grand Total</label>
+      <label class="cost">Grand Total</label>
       <div class="totals-value" id="cart-total">2242.78</div>
     </div>
   </div>
