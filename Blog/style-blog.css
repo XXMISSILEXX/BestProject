@@ -401,10 +401,7 @@
         margin: 10px 10px ;
         border-radius: 5px;
      }
-     div.surround{
-         margin-left: 30px;
-         margin-bottom: 700px;
-     }
+
 
      /* Layout */
     .left-column{
@@ -412,7 +409,6 @@
     }
     .right-column{
         width: 80%;
-        float: right;
         display: inline-block;
     }
     div.content{
@@ -426,6 +422,9 @@
     }
     a.share{
         float:right;
+    }
+    .surround {
+      display: flex;
     }
     
     
