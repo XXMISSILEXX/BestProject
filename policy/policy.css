@@ -388,7 +388,6 @@ img {
 }
 .cskh_nav{
 	margin-top: 100px;
-	margin-bottom:  100px;
 
 }
 #policy{
@@ -396,6 +395,7 @@ img {
 	text-align:  center;
 	font-weight:  bold;
 	font-size: 50px;
+	color: #FF3333;
 }
 .phan {
 	text-decoration-line: underline;
@@ -420,7 +420,25 @@ table{
 #a {
 	text-decoration: underline;
 	font-weight: bold;
+	color:  #FF3333;
 }
 img{
 	margin: 50px;
+}
+.phannho{
+	font-weight: bold;
+	color:  #FF3333;
+}
+#way{
+	font-weight: bold;
+}
+b{
+	color: #FF3333;
+}
+#car{
+	margin-top: 0;
+	width: 1000px;
+}
+#table{
+	text-align: center;
 }
