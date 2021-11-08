@@ -302,7 +302,6 @@ img {
 
 
 
-
 /*Footer*/
 
 .footer{
@@ -410,15 +409,18 @@ td{
 }
 
 .ten{
-	background-color: black;
-	color: white;
+	font-weight: bold;
 	text-align: center;
 }
 table{
 	border:5px solid red;
+	margin: 50px;
 
 }
 #a {
 	text-decoration: underline;
 	font-weight: bold;
+}
+img{
+	margin: 50px;
 }
