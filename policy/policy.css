@@ -442,3 +442,9 @@ b{
 #table{
 	text-align: center;
 }
+main {
+	width: 100%;
+}
+.container {
+	margin: 0 auto;
+}
