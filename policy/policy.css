@@ -18,16 +18,16 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-size: 62.5%;			//default is 16px -->  62.5% x 16 = 10 -->1rem =10  / 2rem =20
+  font-size: 62.5%;		
 }
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;   // 1.6 x 10 =16
+  font-size: 1.6rem;  
   font-weight: 400;
   color: var(--black);
   background-color: var(--white);
-  z-index: -1;   // behind
+  z-index: -1; 
 }
 li,
 ul {
@@ -298,41 +298,8 @@ img {
     z-index: 999;
   }
 }
-.cskh_nav{
-	margin-top: 100px;
-	margin-bottom:  100px;
 
-}
-h1{
-	text-transform:  uppercase;
-	text-align:  center;
-	font-weight:  bold;
-	font-size: 50px;
-}
-.phan {
-	text-decoration-line: underline;
-	font-weight: bold;
-	font-size: 25px;
-}
-}
-td{
-	width: 94px;
-	height:  30px;
-}
 
-.ten{
-	background-color: black;
-	color: white;
-	text-align: center;
-}
-table{
-	border:5px solid red;
-
-}
-#a {
-	text-decoration: underline;
-	font-weight: bold;
-}
 
 
 
@@ -419,4 +386,39 @@ table{
 	.footer .icon a{
 		margin-left: 10px;
 	}
+}
+.cskh_nav{
+	margin-top: 100px;
+	margin-bottom:  100px;
+
+}
+#policy{
+	text-transform:  uppercase;
+	text-align:  center;
+	font-weight:  bold;
+	font-size: 50px;
+}
+.phan {
+	text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 25px;
+}
+}
+td{
+	width: 94px;
+	height:  30px;
+}
+
+.ten{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+table{
+	border:5px solid red;
+
+}
+#a {
+	text-decoration: underline;
+	font-weight: bold;
 }
