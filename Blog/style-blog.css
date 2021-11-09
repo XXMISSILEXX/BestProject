@@ -392,7 +392,7 @@
          text-align: center;
      }
      
-     span{
+     span.extra{
          color: orangered;
      }
      div.content{
@@ -406,6 +406,7 @@
      /* Layout */
     .left-column{
         width: 20%;
+        margin-left: 5px;
     }
     .right-column{
         width: 80%;
@@ -426,6 +427,9 @@
     .surround {
       display: flex;
     }
-    
+    input{
+        padding: 10px 35px 10px 5px;
+        border-radius: 10px;
+    }
     
      
