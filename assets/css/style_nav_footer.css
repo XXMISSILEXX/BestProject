@@ -44,6 +44,10 @@
     max-width: 114rem;                                  /*114x10 =  1140px*/
     margin: 0 auto;
   }
+
+  h1 {
+    font-weight: bolder;
+}
   
   @media only screen and (max-width: 1200px) {
     .container {
@@ -309,7 +313,7 @@
       background-color: #222;
       padding: 60px 10px 10px 10px;
       line-height: 30px;
-      margin-top: 50px;
+      margin-top: 104px;
   }									
   
   .footer-center span{

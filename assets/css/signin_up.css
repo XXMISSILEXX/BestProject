@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ccc;
+    background: url('/Search-Page/Q4LS27EK2PJML6ZAOHV2AGHLH4.jpg') top center / cover no-repeat;
 }
 
 * {
@@ -19,8 +19,8 @@ form a {
 
 .register {
     width: 500px;
-    padding: 16px;
-    margin: 44px auto 0px;
+    padding: 16px 16px 0;
+    margin: 92px auto 0px;
     background-color: #fff;
 }
 
@@ -73,7 +73,7 @@ hr {
     background-color: #fff;
     text-align: center;
     width: 500px;
-    padding: 16px;
+    padding: 16px 16px 24px;
     margin: 0px auto;
 }
 
