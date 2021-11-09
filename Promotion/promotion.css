@@ -410,6 +410,10 @@ img {
     grid-gap: 20px;
 }
 
+
+main div img#sale{
+	margin-top: 70px;
+}
 .product a {
     color: #000;
 }
