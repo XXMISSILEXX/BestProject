@@ -390,7 +390,7 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .chu {
     margin-top: 68px;
-    padding: 10px 139px;
+    padding: 10px;
     color: #FF3333;
     font-size: 25px;
 }
@@ -490,7 +490,7 @@ section {
 	font-size: 40px;
 }
 .more{
-	margin-left: 1200px;
+	margin-left: 1050px;
 	margin-right: 0;
 	color: #FF3333;
 	font-size: 25px;
