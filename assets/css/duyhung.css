@@ -79,7 +79,7 @@
     .product .card .content {
         position: absolute;
         bottom: -10px;
-        right: 30px;
+        width: 100%;
     }
 
     .product .card .content .pdName {
