@@ -331,11 +331,16 @@ hr {
 .main-product-info p {
 	margin-bottom: 10px;
 }
+.saleoff {
+	text-decoration: line-through;
+	padding-right: 20px;
+}
 .price p {
 	color: red;
 	font-size: 25px;
 	font-weight: bold;
 	margin: 10px 0;
+	display: inline;
 }
 .product-color p {
 	margin-bottom: 10px;
