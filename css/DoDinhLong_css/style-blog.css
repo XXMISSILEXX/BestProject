@@ -386,7 +386,13 @@
   }
 
 
-     /* Style blog */
+      /* Style blog */
+      .surround {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+    }
      h1.heading{
          margin-top: 80px;
          text-align: center;
@@ -400,23 +406,22 @@
         display: inline-table;
         margin: 10px 10px ;
         border-radius: 5px;
+        height: 50%;
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
      }
 
 
      /* Layout */
     .left-column{
-        width: 20%;
-        margin-left: 5px;
+        flex: 20%;
+        padding-left: 5px;
     }
     .right-column{
-        width: 80%;
-        display: inline-block;
+        flex: 80%;
     }
-    div.content{
-        height: 100px;
-        width: 31%;
-        padding: 10px;
-    }
+
     p.infor{
         color: grey;
         font-size: small;
@@ -424,12 +429,28 @@
     a.share{
         float:right;
     }
-    .surround {
-      display: flex;
-    }
+    
     input{
         padding: 10px 35px 10px 5px;
         border-radius: 10px;
     }
+    @media only screen and (max-width: 960px){
+        .surround{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+      .left-column{
+        text-align: center;
+    }
+
+    }
     
+      @media only screen and (max-width: 567px){
+        div.content{
+        width: 100%;
+        height: 100%;
+     }
      
+      }
