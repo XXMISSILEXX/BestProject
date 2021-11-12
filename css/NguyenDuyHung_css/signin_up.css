@@ -76,9 +76,35 @@ hr {
     padding: 16px 16px 24px;
     margin: 0px auto;
 }
-/* 
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     color: #fff;
-} */
+}
+
+@media (min-width: 836px) and (max-width: 938.5px) {
+
+    .login,
+    .register{
+        width: 80%;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr));
+        color: #fff;
+    }
+}
+
+@media (max-width: 835px) {
+    .login,
+    .register{
+        width: 80%;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr));
+        color: #fff;
+    }
+}
