@@ -84,6 +84,12 @@ hr {
 }
 
 @media (min-width: 836px) and (max-width: 938.5px) {
+
+    .login,
+    .register{
+        width: 80%;
+    }
+
     .footer-container {
         display: grid;
         grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr));
@@ -92,6 +98,10 @@ hr {
 }
 
 @media (max-width: 835px) {
+    .login,
+    .register{
+        width: 80%;
+    }
     .footer-container {
         display: grid;
         grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr));
