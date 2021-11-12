@@ -584,14 +584,13 @@ a button:hover {
 	font-size: 17px;
 }
 .all-detail {
-	border: 1px solid #D1C8D7;
-	border-radius: 20px;
 	display: inline-block;
-	width: 90%;
 	margin-top: -10px;
-	margin-left: 80px;
 }
 .detail {
+	width: 90%;
+	border: 1px solid silver;
+	border-radius: 20px;
 	margin: 0 auto;
 }
 .detail h1,p {
@@ -714,59 +713,29 @@ a button:hover {
 .swiper {
   margin-left: 160px;
 }
-/*Tablet: width >= 740px and width < 1024px*/
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-	.main-product {
-		flex-direction: column;
-		text-align: center;
-		margin-left: 70px;
-	}
-	.all-detail {
-		width: 50%;
-		margin-left: 120px;
-	}
-	.bonus {
-	  width: 90%;
-	  margin-left: 40px;
-	}
-	hr {
-		width: 100%;
-	}
-	.main-product-info h1 {
-		font-size: 35px;
-		font-weight: bold;
-		border-bottom: 1px solid black;
-	}
-	.items {
-		display: none;
+@media (min-width: 740px) and (max-width: 1500px) {
+	.all {
+		width: 1400px;
 	}
 }
-@media only screen and (min-width: 100px) and (max-width: 740px) {
-	.main-product {
-		flex-direction: column;
-		text-align: center;
+@media (max-width: 1396.5px) {
+	.all {
+		width: 1200px;
 	}
-	.all-detail {
-		width: 43%;
-		margin-left: 50px;
+}
+@media (max-width: 1187.5px) {
+	.all {
+		width: 1100px;
 	}
-	.bonus {
-		width: 96%;
+}
+@media (max-width: 1088.5px) {
+	.all {
+		width: 1000px;
 	}
-	.main-product-info {
-		width: 50%;
-		margin-left: -10px;
-	}
-	hr {
-		width: 100%;
-	}
-	.product-color {
+}
+@media (max-width: 972px) {
+	.all {
 		width: 95%;
 	}
-	.items {
-		display: none;
-	}
-	.swiper {
-		margin-left: -20px;
-	}
 }
+
