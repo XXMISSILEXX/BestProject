@@ -420,6 +420,8 @@
     }
     .right-column{
         flex: 80%;
+        box-sizing: border-box;
+        margin-block-end: 60px;
     }
 
     p.infor{
