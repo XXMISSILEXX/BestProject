@@ -307,11 +307,8 @@ hr {
 	margin-left: 245px;
 }
 .main-product-image { 
-	width: 40%;
-	background-repeat:no-repeat ;
-	background-position:center ;
-	background-size: cover;	
-	padding-left: 70px;
+	width: 40%;	
+	padding-left: 90px;
 }
 .main-product-info h1 {
 	font-size: 35px;
@@ -335,12 +332,18 @@ hr {
 	text-decoration: line-through;
 	padding-right: 20px;
 }
+.price {
+	margin-top: 10px;
+}
 .price p {
 	color: red;
 	font-size: 25px;
 	font-weight: bold;
 	margin: 10px 0;
 	display: inline;
+}
+.product-color {
+	margin-top: 5px;
 }
 .product-color p {
 	margin-bottom: 10px;
@@ -713,9 +716,15 @@ a button:hover {
 .swiper {
   margin-left: 160px;
 }
-@media (min-width: 740px) and (max-width: 1500px) {
+@media (max-width: 1500px) {
 	.all {
 		width: 1400px;
+	}
+	.swiper {
+		margin-left: -40px;
+	}
+	.items {
+		margin-left: 120px ;
 	}
 }
 @media (max-width: 1396.5px) {
