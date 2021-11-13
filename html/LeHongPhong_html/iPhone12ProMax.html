@@ -63,7 +63,7 @@
 					<div class="nav-icons">
 						<span><a href="../NguyenDuyHung_html/signIn.html"><i class="fas fa-user"></i></a></span>
 						<span><a href="../TranTrungHieu_html/Search-Page.html"><i class="fas fa-search"></i></a></span>
-						<span><a href="../DoDinhLong_html/cart.html"><i class="fas fa-shopping-cart"></i></a></span>
+						<span><a><i class="fas fa-shopping-cart"></i></a></span>
 						<!-- <span id="checkout_items" class="checkout_items">2</span> -->
 					</div>
 
@@ -100,9 +100,10 @@
 		<div class="main-product-info ">
 			<h1>iPhone 12 Pro Max</h1>
 			<div class="price">
-				<p>Price : </p>
-				<p class="saleoff">930$</p>
-				<p>651$</p>
+				<span style="color:red; font-size:25px; font-weight: bold;">Price : </span>
+				<span class="saleoff" style="color:red; font-size:25px; font-weight: bold;">930$</span>
+				<p>651</p>
+				<span style="color:red; font-size:25px; font-weight: bold;">$</span>
 			</div>
 			<div class="product-color">
 				<p style="font-weight:bold; font-size: 20px;">Color : </p>
@@ -127,7 +128,7 @@
 					<li>- iOS 14 with redesigned widgets on the Home screen, all-new App Library, App Clips, and more</li>
 				</ul>
 			</p>
-			<a href="#"><button><i class="fas fa-shopping-cart" style="padding-right: 5px;"></i> Add to cart</button></a>
+			<button><i class="fas fa-shopping-cart" style="padding-right: 5px;"></i> Add to cart</button>
 			<div class="bonus">
 				<h2>Special Promotion</h2>
 				<p>Gift voucher for Accessories 50$</p>
@@ -169,6 +170,30 @@
 			<p>Charging technology is on the 12 Pro Max which is fast wireless charging technology up to 15W. This can help you avoid having to wait for your phone to finish charging when it can replenish 50% of its capacity in just 30 minutes.</p>
 		</div>
 	</div>
+
+	<section class="cart">
+		<i class="fas fa-angle-double-right"></i>
+		<form action="">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Choose</th>
+					</tr>
+					<tbody>
+	
+					</tbody>
+				</thead>
+			</table>
+			<div style="text-align:right;" class="price-total">
+				<p style="font-weight: bold;">Total:<span>0</span>($)</p>
+			</div>
+			<button style="text-align: center;" class="purchase-cart">Purchase</button>
+		</form>
+	</section>
+
 		<footer id="footer" class="section footer">
 				<div class="container">
 					<div class="footer-container">
@@ -259,5 +284,6 @@
       });
     </script>
     <script src="../../js/HomePagejs/index.js"></script>
+    <script src="../../js/cartjs/main.js"></script>
 </body>
 </html>
