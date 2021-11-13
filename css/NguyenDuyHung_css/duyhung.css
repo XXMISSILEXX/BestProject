@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
+html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -130,13 +130,6 @@
     @media (max-width: 739.5px) {
         section {
             padding: 0 30px;
-        }
-        section ul {
-            display: block;
-            text-align: center;
-        }
-        section ul li {
-            padding: 12px;
         }
         .chu {
             padding: 12px 20px;
