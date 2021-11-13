@@ -769,7 +769,7 @@ sup {
 	top: 0;
 	height: 800px;
 	width: 400px;
-	background-color: pink;
+	background-color: 	rgba(255,150,197,0.9);
 	padding: 12px 20px;
 	margin-top: 70px;
 	overflow-y: scroll;
