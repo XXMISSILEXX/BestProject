@@ -58,7 +58,7 @@
 					<div class="nav-icons">
 						<span><a href="../../html/NguyenDuyHung_html/signIn.html"><i class="fas fa-user"></i></a></span>
 						<span><a href="../../html/TranTrungHieu_html/Search-Page.html"><i class="fas fa-search"></i></a></span>
-						<span><a href="../../html/DoDinhLong_html/cart.html"><i class="fas fa-shopping-cart"></i></a></span>
+						<span><a><i class="fas fa-shopping-cart"></i></a></span>
 						<!-- <span id="checkout_items" class="checkout_items">2</span> -->
 					</div>
 
@@ -94,7 +94,28 @@
                     <p>Do you have an account? <a href="../../html/NguyenDuyHung_html/signIn.html">Sign In<a></p>
                 </div>
             </form>
-
+			<section class="cart">
+				<i class="fas fa-angle-double-right"></i>
+				<form action="">
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Choose</th>
+							</tr>
+							<tbody>
+			
+							</tbody>
+						</thead>
+					</table>
+					<div style="text-align:right;" class="price-total">
+						<p style="font-weight: bold;">Total:<span>0</span>($)</p>
+					</div>
+					<button style="text-align: center;" class="purchase-cart">Purchase</button>
+				</form>
+			</section>
 
 
 			<footer id="footer" class="section footer">
@@ -172,6 +193,7 @@
 			<!-- End Footer -->
 
 			<script src="../../js/duyhungjs/app.js"></script>
+			<script src=../../js/cartjs/homepagecart.js></script>
 			<script src="../../js/HomePagejs/index.js"></script>
 </body>
 </html>
