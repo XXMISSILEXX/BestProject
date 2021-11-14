@@ -119,13 +119,13 @@
     .product .card .add-cart {
         position: relative;
         width: 40%;
-        background-color: pink;
+        background-color: #ccc;
         transition: all 0.3s ease-in-out;
         opacity: 0;
         text-align: center;
         cursor: pointer;
-        bottom: -212px;
-        left: 77px;
+        bottom: -188px;
+        left: 29%;
         border-radius: 10px;
         font-weight: 600;
     }
