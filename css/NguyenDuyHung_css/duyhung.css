@@ -116,6 +116,27 @@
         margin-left: 6px;
     }
 
+    .product .card .add-cart {
+        position: relative;
+        width: 40%;
+        background-color: pink;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        text-align: center;
+        cursor: pointer;
+        bottom: -212px;
+        left: 77px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    .product .card:hover .add-cart {
+        opacity: 1;
+        padding: 10px;
+        text-decoration: none;
+        bottom: -200px;
+    }
+
 
     @media (min-width: 740px) and (max-width: 1239.5px) {
         section {

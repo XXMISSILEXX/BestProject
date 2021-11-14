@@ -21,25 +21,25 @@ function validate() {
   var b = document.getElementById("password-repeat").value;
 
   if(u == "") {
-      alert("Vui lòng nhập tên!");
+      alert("Please enter a name!");
   }
   if (u.length > 0 && u.length < 5) {
-      alert("Tên đăng nhập phải trên 5 ký tự!");
+      alert("Username must be more than 5 characters!");
       return false;
   }
   if (a == "") {
-      alert("Vui lòng nhập mật khẩu!");
+      alert("Please enter a password!!");
       return false;
   }
   if (b == "") {
-      alert("Vui lòng nhập lại mật khẩu!");
+      alert("Please re-enter your password!");
       return false;
   }
   if (a != b) {
-      alert("Xin hãy nhập đúng mật khẩu!");
+      alert("Please enter the correct password!");
       return false;
   }
   else {
-      alert("Bạn đã đăng ký thành công!");
+      alert("You have successfully registered!");
   }
 }
