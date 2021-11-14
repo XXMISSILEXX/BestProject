@@ -16,6 +16,7 @@ function addcart(productPrice,productImg,productName) {
 	var cartTable = document.querySelector("tbody")
 	cartTable.append(addtr)
 	carttotal()
+	removeCart()
 }
 
 function carttotal (){
@@ -30,15 +31,17 @@ function carttotal (){
 	var carttotal = document.querySelector(".price-total span") 
 	carttotal.innerHTML = total2
 	inputchange()
+	removeCart()
 }
 
-function deleteCart () {
+function removeCart () {
 	var cartItem=document.querySelectorAll("tbody tr")
 	for (var i=0;i<cartItem.length;i++) {
 		var productT = document.querySelectorAll(".cart-remove")
 	 	productT[i].addEventListener("click",function(event){
 			var cartDelete = event.target
 			var cartitemR = cartDelete.parentElement.parentElement.remove()
+			carttotal()
 		})
 	}
 }
