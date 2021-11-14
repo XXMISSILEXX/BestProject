@@ -833,3 +833,66 @@ a.cart-btn:hover {
 
 
 
+.add-cart{
+	position: relative;
+	width: 100%;
+	background-color: pink;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+	bottom: 100px;
+	border-radius: 10px;
+	font-weight: 600;
+}
+
+div.product:hover .add-cart{
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+	bottom: 120px
+}
+
+
+.cart {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+table {
+	width: 100%;
+}
+table thead tr th:first-of-type {
+	text-align: left;
+	padding-left: 30px;
+}
+sup {
+	color: red;
+}
+.cart {
+	position: fixed;
+	top: 0;
+	height: 800px;
+	width: 400px;
+	background-color: 	rgba(255,150,197,0.9);
+	padding: 12px 20px;
+	margin-top: 70px;
+	overflow-y: scroll;
+	right: -100%;
+}
+.cart i {
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.purchase-cart {
+	background-color: red;
+	width: 100px;
+	height: 40px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+.purchase-cart:hover {
+	background-color: blue;
+}
