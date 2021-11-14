@@ -41,7 +41,7 @@
     max-height: 100%;
   }
   .container {
-    max-width: 114rem;                                  /*114x10 =  1140px*/
+    max-width: 114rem;                                
     margin: 0 auto;
   }
 
@@ -52,7 +52,7 @@
   @media only screen and (max-width: 1200px) {
     .container {
       padding: 0 3rem;
-    }																/*define width for container - media queries*/
+    }																
   }
   @media only screen and (max-width: 768px) {
     .container {
@@ -60,16 +60,15 @@
     }
   }
   
-  /*Navigation*/
   .container {
-    max-width: 1140px;                                  /*114x10 =  1140px*/
+    max-width: 1140px;                                
     margin: 0 auto;
   }
   
   @media only screen and (max-width: 1200px) {
     .container {
       padding: 0 30px;
-    }																/*define width for container - media queries*/
+    }															
   }
   @media only screen and (max-width: 768px) {
     .container {
@@ -77,7 +76,7 @@
     }
   }
   .navigation{
-      padding:  16px 0;    /*1.6 x 10 = 16px*/
+      padding:  16px 0;    
   
   }
   
@@ -114,7 +113,7 @@
   }
   
   .nav-item:not(:last-child){
-      margin-right: 5px;  				/*0.5x10=5px*/
+      margin-right: 5px;  				
   
   }
   .nav-item{
@@ -140,7 +139,7 @@
       left: 0;
       background-color: #f60091;
       transition: transform 500ms;
-      transform: scaleX(0);					/*scalex decrease or increase width*/
+      transform: scaleX(0);					
       transform-origin: top;	
   }
   .nav-link:hover::after{
@@ -161,30 +160,11 @@
       transition: all 300ms ease-in-out;
   }
   .nav-icons span a{
-      color: black;									/*set the icon to black*/
+      color: black;								
   }
   .nav-icons span:hover{
       background-color: #f60091;
   }
-  
-  
-  /*.checkout_items{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;						
-      top: 10px;
-      left: 1192px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #fe4c50;
-      font-size: 12px;
-      color: #ffffff;
-  }*/
-  
-  
   
   .nav-icons .fas{
       transition: all 300ms ease-in-out;
@@ -194,11 +174,10 @@
   }
   
   .hamburger{
-      display: none;										/*hide the hamburger until the width is <=768px*/
+      display: none;	
   }
   
-  
-                                          /*Navbar responsive*/							
+  				
   
   @media only screen and (max-width: 996px){
       .nav-item:not(:last-child){
