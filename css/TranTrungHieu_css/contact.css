@@ -18,16 +18,16 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-size: 62.5%;			//default is 16px -->  62.5% x 16 = 10 -->1rem =10  / 2rem =20
+  font-size: 62.5%;		
 }
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;   // 1.6 x 10 =16
+  font-size: 1.6rem;   
   font-weight: 400;
   color: var(--black);
   background-color: var(--white);
-  z-index: -1;   // behind
+  z-index: -1;  
 }
 li,
 ul {
@@ -441,4 +441,50 @@ input[type="submit"]:hover {
 }
 ::placeholder {
 	font-family: 'Poppins',sans-serif;
+}
+
+section.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+table {
+    width: 100%;
+}
+table thead tr th:first-of-type {
+    text-align: left;
+    padding-left: 30px;
+}
+sup {
+    color: red;
+}
+section.cart {
+    position: fixed;
+    top: 0;
+    height: 800px;
+    width: 400px;
+    background-color:   rgba(255,150,197,0.9);
+    padding: 12px 20px;
+    margin-top: 70px;
+    overflow-y: scroll;
+    right: -100%;
+}
+section.cart i {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.purchase-cart {
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.purchase-cart:hover {
+    background-color: blue;
+}
+table tbody tr td {
+    font-size: 12px;
 }
