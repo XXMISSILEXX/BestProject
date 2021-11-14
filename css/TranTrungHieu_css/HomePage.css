@@ -896,3 +896,6 @@ sup {
 .purchase-cart:hover {
 	background-color: blue;
 }
+table tbody tr td {
+	font-size: 12px;
+}
