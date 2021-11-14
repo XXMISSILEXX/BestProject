@@ -5,7 +5,7 @@ btn.forEach(function(button,index) {
 		var product = btnItem.parentElement
 		var productImg = product.querySelector("img").src
 		var productName = product.querySelector("h3").innerText
-		var productPrice = product.querySelector("h2").innerText
+		var productPrice = product.querySelector("h2.price").innerText
 		addcart(productPrice,productImg,productName)
 		console.log(productPrice,productImg,productName)
 	}})
@@ -25,7 +25,7 @@ function carttotal (){
 	var total2=0
 	for (var i=0;i<cartItem.length;i++) {
 		var quantity = cartItem[i].querySelector("input").value
-		var ProductPrice = cartItem[i].querySelector("p").innerText
+		var ProductPrice =parseFloat(cartItem[i].querySelector("p").innerText.replace('$',''))
 		total1 = quantity * ProductPrice
 		total2 = total2 + total1
 	}
