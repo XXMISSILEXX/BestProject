@@ -27,7 +27,7 @@ closeBtn.addEventListener("click", () => {
 //     navBar.classList.remove("fix-nav");
 //   }
 // });
-var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
+		var check_phone = /^\([+]\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{3}$/;
 		var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
 		var check_username = /^[A-Za-z0-9]{1,20}$/;
 		var check_subject = /^[A-Za-z]{1,40}$/;
@@ -53,26 +53,26 @@ var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
 		function validform(f){
 				if(checknull(f.fullname))
 				{
-					alert(f.fullname.name + ' must be not null');
+					alert('Name must be not null');
 					f.fullname.focus();
 					return;
 				}
 				if(checknull(f.subject))
 				{
-					alert(f.subject.name + ' must be not null');
+					alert('Subject must be not null');
 					f.subject.focus();
 					return;
 				}
 
 				if(checknull(f.message))
 				{
-					alert(f.message.name + ' must be not null');
+					alert('Message must be not null');
 					f.message.focus();
 					return;
 				}
 				
 				if(!StringMatch(f.subject,check_subject)){
-					alert("subject is not valid");
+					alert("Subject is not valid");
 					f.subject.focus();
 					return;
 				}
@@ -92,5 +92,5 @@ var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
 					alert('Phone is not valid');
 					return;
 				}
-				alert('All Fields are valid');
+				alert('Sent to admin successfully');
 		}
