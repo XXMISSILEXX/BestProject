@@ -72,24 +72,24 @@ closeBtn.addEventListener("click", () => {
 				}
 				
 				if(!StringMatch(f.subject,check_subject)){
-					alert("Subject is not valid");
+					alert("Please enter letters, do not enter numbers in subject");
 					f.subject.focus();
 					return;
 				}
 				
 				if(!StringMatch(f.message,check_message)){
-					alert("Message is not valid");
+					alert("Please enter more than 1 character");
 					f.message.focus();
 					return;
 				}
 				
 				if(!StringMatch(f.email,check_email)){
-					alert("Email is not valid");
+					alert("Email is not valid !!! Please enter correctly as required");
 					f.email.focus();
 					return;
 				}
 				if(!StringMatch(f.phone,check_phone)){
-					alert('Phone is not valid');
+					alert('Phone is not valid !!! Please enter correctly as required');
 					return;
 				}
 				alert('Sent to admin successfully');
