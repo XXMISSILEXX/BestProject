@@ -27,36 +27,70 @@ closeBtn.addEventListener("click", () => {
 //     navBar.classList.remove("fix-nav");
 //   }
 // });
+var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
+		var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
+		var check_username = /^[A-Za-z0-9]{1,20}$/;
+		var check_subject = /^[A-Za-z]{1,40}$/;
+		var check_message = /^[A-Za-z0-9]{1,2000}$/;
 
-function check () {
-      var name =document.forms.name.value;
-      var email=document.forms.email.value;
-      var phone=document.forms.phone.value;
-      var sub=document.forms.subject.value;
-      var mess=document.forms.message.value;
-      if (name===null || name==='') {
-        alert("Username can't be blank");
-        document.forms.name.focus();
-        return false;
-      }
-      if (email===null || email==='') {
-        alert("Email can't be blank");
-        document.forms.email.focus();
-        return false;
-      } 
-      if (phone===null || phone==='') {
-        alert("Phone can't be blank");
-        document.forms.phone.focus();
-        return false;
-      }
-      if (sub===null || sub==='') {
-        alert("Subject can't be blank"); 
-        document.forms.subject.focus();
-        return false;
-      }
-      if (mess===null || mess==='') {
-        alert("Message can't be blank");
-        document.forms.message.focus();
-        return false;
-      }
-    }
+		function checknull(txt){
+			if(txt.value.length==0)
+				return true;
+			else
+				return false;
+		}
+
+		function isInteger(txt){
+			if((!isNaN(txt.value)) && (parseInt(txt.value))===Number(txt.value))
+				return true;
+			else
+				return false;
+		}	
+
+		function StringMatch(txt,reg){
+			return reg.test(txt.value)
+		}	
+		function validform(f){
+				if(checknull(f.fullname))
+				{
+					alert(f.fullname.name + ' must be not null');
+					f.fullname.focus();
+					return;
+				}
+				if(checknull(f.subject))
+				{
+					alert(f.subject.name + ' must be not null');
+					f.subject.focus();
+					return;
+				}
+
+				if(checknull(f.message))
+				{
+					alert(f.message.name + ' must be not null');
+					f.message.focus();
+					return;
+				}
+				
+				if(!StringMatch(f.subject,check_subject)){
+					alert("subject is not valid");
+					f.subject.focus();
+					return;
+				}
+				
+				if(!StringMatch(f.message,check_message)){
+					alert("Message is not valid");
+					f.message.focus();
+					return;
+				}
+				
+				if(!StringMatch(f.email,check_email)){
+					alert("Email is not valid");
+					f.email.focus();
+					return;
+				}
+				if(!StringMatch(f.phone,check_phone)){
+					alert('Phone is not valid');
+					return;
+				}
+				alert('All Fields are valid');
+		}
