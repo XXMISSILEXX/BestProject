@@ -425,7 +425,7 @@ img {
   width: 98.4%;
   resize: none;
 }
-input[type="submit"] {
+input[type="button"] {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -435,7 +435,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #051922;
   color: #F28123;
 }

@@ -76,22 +76,23 @@
 				Home > Sign In
 			</div>
 
-            <form action="" onsubmit="return validate()">
-                <div class="register">
-                    <h1 class="center">Sign In</h1>        
-                    <p class="center">Please fill in your information to login</p>
-                    <hr>
-                    <label for="username">Username</label>
-                    <input type="text" placeholder="Username" name="username" id="login-username">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="******" name="password" id="login-password">
-                    <p>To create an account please agree to our terms <a href="#">Term & Private</a></p>
-                    <button type="submit" class="submit">Login</button>
-                </div>
-                <div class="login">
-                    <p>Do not have an account? <a href="../../html/NguyenDuyHung_html/signUp.html">Sign Up<a></p>
-                </div>
-            </form>
+            <form name="frmAccount" action="ferg.jsp">
+				<div class="register">
+					<h1 class="center">Sign In</h1>        
+					<p class="center">Please fill in the information to register</p>
+					<hr>
+					<label for="username">Username</label>
+					<input type="text" placeholder="Username" name="username" id="username">
+					<label for="password">Password</label>
+					<input type="password" placeholder="******" name="password" id="password">
+					<p>To create an account please agree to our terms <a href="#">Term & Private</a></p>
+					<input type="button" class="submit" value="Submit" onclick="validform(document.forms.frmAccount);">
+				</div>
+				<div class="login">
+					<p>Do you have an account? <a href="../../html/NguyenDuyHung_html/signUp.html">Sign Up<a></p>
+				</div>
+			</form>
+			
 			<section class="cart">
 				<i class="fas fa-angle-double-right"></i>
 				<form action="">
