@@ -57,29 +57,10 @@ closeBtn.addEventListener("click", () => {
 					f.fullname.focus();
 					return;
 				}
-				if(checknull(f.subject))
+				if(checknull(f.phone))
 				{
-					alert('Subject must be not null');
-					f.subject.focus();
-					return;
-				}
-
-				if(checknull(f.message))
-				{
-					alert('Message must be not null');
-					f.message.focus();
-					return;
-				}
-				
-				if(!StringMatch(f.subject,check_subject)){
-					alert("Please enter letters, do not enter numbers in subject");
-					f.subject.focus();
-					return;
-				}
-				
-				if(!StringMatch(f.message,check_message)){
-					alert("Please enter more than 1 character");
-					f.message.focus();
+					alert('Phone must be not null');
+					f.phone.focus();
 					return;
 				}
 				
@@ -90,6 +71,22 @@ closeBtn.addEventListener("click", () => {
 				}
 				if(!StringMatch(f.phone,check_phone)){
 					alert('Phone is not valid !!! Please enter correctly as required');
+					return;
+				}
+				if(checknull(f.subject))
+				{
+					alert('Subject must be not null');
+					f.subject.focus();
+					return;
+				}
+				if(!StringMatch(f.subject,check_subject)){
+					alert("Please enter letters, do not enter numbers in subject");
+					f.subject.focus();
+					return;
+				}
+				if(!StringMatch(f.message,check_message)){
+					alert("Please enter more than 1 character");
+					f.message.focus();
 					return;
 				}
 				alert('Sent to admin successfully');
