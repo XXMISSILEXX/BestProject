@@ -587,7 +587,6 @@ button:hover {
 	font-size: 17px;
 }
 .all-detail {
-	display: inline-block;
 	margin-top: -10px;
 }
 .detail {
@@ -611,7 +610,6 @@ button:hover {
 	color: black;
 }
 .img-all-detail {
-	display: flex;
 	width: 98%;
 	height: 650px;
 	margin: 10px;
