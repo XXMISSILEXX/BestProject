@@ -38,19 +38,6 @@ main div img#sale{
         margin: 32px 0 10px;
     }
 
-    section ul li {
-        list-style: none;
-        background-color: #ccc;
-        padding: 8px 20px;
-        margin: 5px 8px;
-        letter-spacing: 1px;
-        cursor: pointer;
-    }
-
-    section ul li.active {
-        background-color: rgb(0, 119, 255);
-        color: #fff;
-    }
 
     .product {
         position: relative;
@@ -146,13 +133,6 @@ main div img#sale{
     @media (max-width: 739.5px) {
         section {
             padding: 0 30px;
-        }
-        section ul {
-            display: block;
-            text-align: center;
-        }
-        section ul li {
-            padding: 12px;
         }
         .chu {
             padding: 12px 20px;
