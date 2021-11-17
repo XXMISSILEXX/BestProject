@@ -21,23 +21,10 @@ main div img#sale{
 .product a {
     color: #000;
 }
-
-    del {
-        opacity: 0.65;
-    }
-
     section {
         max-width: 1200px;
         margin: auto;
     }
-
-    section ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 32px 0 10px;
-    }
-
 
     .product {
         position: relative;
@@ -46,7 +33,7 @@ main div img#sale{
         grid-template-columns: repeat(auto-fit ,minmax(250px ,1fr));
 		grid-gap: 20px;		
     }
-
+ 
     .product a {
         color: #000;
     }
