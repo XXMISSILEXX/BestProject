@@ -588,6 +588,7 @@ button:hover {
 }
 .all-detail {
 	margin-top: -10px;
+	width: 100%;
 }
 .detail {
 	width: 90%;
@@ -716,7 +717,7 @@ button:hover {
 }
 @media (max-width: 1500px) {
 	.all {
-		width: 1400px;
+		width: 95%;
 	}
 	.swiper {
 		margin-left: -40px;
@@ -727,17 +728,17 @@ button:hover {
 }
 @media (max-width: 1396.5px) {
 	.all {
-		width: 1200px;
+		width: 95%;
 	}
 }
 @media (max-width: 1187.5px) {
 	.all {
-		width: 1100px;
+		width: 95%;
 	}
 }
 @media (max-width: 1088.5px) {
 	.all {
-		width: 1000px;
+		width: 95%;
 	}
 }
 @media (max-width: 972px) {
